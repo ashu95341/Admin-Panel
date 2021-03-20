@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./styles.css">
+
+        
+    </head>
+    <body>
+        <Header>
+            <img class="logo" src="" alt="">
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="#">Orders</a></li>
+                    <li><a href="./products.html">Products</a></li>
+                    <li><a href="./users.html">Users</a></li>
+                </ul>
+            </nav>
+            <a class="cta" href="#"><button onclick="logout()">Logout</button></a>
+        </Header>
+
+        <div id="loggedIn">
+            <!-- New Tweet<input type="text">
+            <button>Submit</button> -->
+<!-- legacy code  -->
+            <h1>Orders</h1>
+            <div>
+                <div id="filter-wrapper-homepage" class="models">
+                    <h3>Filters</h3>
+                    <p></p>
+                    
+                    <input type="checkbox" id="new" name="orders-new" >
+                    <label for="new">New</label><br>
+                    
+                    <input type="checkbox" id="packed" name="orders-packed" >
+                    <label for="packed">Packed</label><br>
+                    
+                    <input type="checkbox" id="intransit" name="orders-intransit" >
+                    <label for="intransit">InTransit</label><br>
+                    
+                    <input type="checkbox" id="delivered" name="orders-delivered" >
+                    <label for="delivered">Delivered</label><br>
+                </div>
+
+                <div>
+                    <table>
+                        <tr>
+                            <th>ID</th>
+                            <th>Customer</th>
+                            <th>Date</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                        </tr>
+                        <tbody id="orders-page">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <button onclick="logout()">Logout</button>
+            <ul>
+                <li>All Tweets here</li>
+            </ul>
+        </div>
+
+        
+        
+        
+    
+        
+        <script src="./index.js" async defer></script>
+    </body>
+</html>
